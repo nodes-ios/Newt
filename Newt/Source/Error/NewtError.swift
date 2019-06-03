@@ -9,16 +9,20 @@
 import Foundation
 
 public enum NewtError: Error {
-    case nonTokenStored, emptyToken
+    case unknown, nonTokenStored, emptyToken, storageDecodingError
 }
 
 extension NewtError {
     public var message: String {
         switch self {
+        case .unknown:
+            return "An unknown error occurred"
         case .nonTokenStored:
             return "Value retrieved from storage did not match Token type"
         case .emptyToken:
             return "Cannot store a nil token"
+        case .storageDecodingError:
+            return "Token storage could not be decoded as type `Data`"
         }
     }
 }

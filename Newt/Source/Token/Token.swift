@@ -8,6 +8,11 @@
 
 import Foundation
 
-public protocol Token: Codable {
+/// Would be nice to convert this to a protocol to allow different Token types
+public final class Token: Codable {
+    public init(value: String) {
+        self.value = value
+    }
     
+    public let value: String
 }
