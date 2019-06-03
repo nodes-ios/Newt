@@ -19,10 +19,23 @@
 
 ##### Swift 5
 ~~~
-github "nodes-ios/Newt"  
+github "nodes-ios/Newt" ~> 0.1
 ~~~
 
 ## 💻 Usage
+
+### Reading a token
+
+```swift
+let newt = Newt(storageType: .userDefaults)
+let token = try newt.readToken()
+```
+ 
+### Storing a token
+```swift
+let newt = Newt(storageType: .userDefaults)
+try newt.store(token)
+```
 
 ## 👥 Credits
 Made with ❤️ at [Nodes](http://nodesagency.com).
