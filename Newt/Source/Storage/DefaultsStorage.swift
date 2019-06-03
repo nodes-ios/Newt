@@ -10,15 +10,18 @@ import Foundation
 
 class DefaultsStorage {
     let defaults = UserDefaults.standard
+    let encoder = JSONEncoder()
+    let decoder = JSONDecoder()
 }
 
 extension DefaultsStorage: Storage {
     func value(forKey key: CacheKey) throws -> Token  {
-        guard let value = defaults.value(forKey: key) as? Token else { throw NewtError.nonTokenStored }
-        return value
+        guard let data = defaults.value(forKey: key) as? Data else { throw NewtError.storageDecodingError }
+        return try decoder.decode(Token.self, from: data)
     }
     
     func set(value: Token, forKey key: CacheKey) throws {
-        defaults.set(value, forKey: key)
+        let data = try encoder.encode(value)
+        defaults.set(data, forKey: key)
     }
 }
