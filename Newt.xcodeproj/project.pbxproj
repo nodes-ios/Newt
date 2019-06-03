@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8355B8A622A1606800910B53 /* Newt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355B89C22A1606800910B53 /* Newt.framework */; };
-		8355B8AB22A1606800910B53 /* NewtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8AA22A1606800910B53 /* NewtTests.swift */; };
 		8355B8AD22A1606800910B53 /* Newt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8355B89F22A1606800910B53 /* Newt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8355B8BA22A1609A00910B53 /* Newt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8B922A1609A00910B53 /* Newt.swift */; };
 		8355B8BC22A160CF00910B53 /* TokenStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8BB22A160CF00910B53 /* TokenStorable.swift */; };
@@ -17,6 +16,8 @@
 		8355B8C222A161C300910B53 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C122A161C300910B53 /* Storage.swift */; };
 		8355B8C422A1624500910B53 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C322A1624500910B53 /* DefaultsStorage.swift */; };
 		8355B8C622A1648E00910B53 /* NewtError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C522A1648E00910B53 /* NewtError.swift */; };
+		839A9F6C22A545370058D012 /* TokenStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F6B22A545370058D012 /* TokenStorageTests.swift */; };
+		839A9F7322A545860058D012 /* ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7222A545860058D012 /* ErrorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,6 @@
 		8355B89F22A1606800910B53 /* Newt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Newt.h; sourceTree = "<group>"; };
 		8355B8A022A1606800910B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8355B8A522A1606800910B53 /* NewtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8355B8AA22A1606800910B53 /* NewtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtTests.swift; sourceTree = "<group>"; };
 		8355B8AC22A1606800910B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8355B8B922A1609A00910B53 /* Newt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newt.swift; sourceTree = "<group>"; };
 		8355B8BB22A160CF00910B53 /* TokenStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorable.swift; sourceTree = "<group>"; };
@@ -43,6 +43,8 @@
 		8355B8C122A161C300910B53 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		8355B8C322A1624500910B53 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		8355B8C522A1648E00910B53 /* NewtError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtError.swift; sourceTree = "<group>"; };
+		839A9F6B22A545370058D012 /* TokenStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorageTests.swift; sourceTree = "<group>"; };
+		839A9F7222A545860058D012 /* ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,8 @@
 		8355B8A922A1606800910B53 /* NewtTests */ = {
 			isa = PBXGroup;
 			children = (
-				8355B8AA22A1606800910B53 /* NewtTests.swift */,
 				8355B8AC22A1606800910B53 /* Info.plist */,
+				839A9F6D22A5453B0058D012 /* Source */,
 			);
 			path = NewtTests;
 			sourceTree = "<group>";
@@ -137,6 +139,39 @@
 				8355B8C322A1624500910B53 /* DefaultsStorage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		839A9F6D22A5453B0058D012 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				839A9F7122A545520058D012 /* Data */,
+				839A9F7022A5454E0058D012 /* Mocks */,
+				839A9F6E22A545420058D012 /* Tests */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		839A9F6E22A545420058D012 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				839A9F6B22A545370058D012 /* TokenStorageTests.swift */,
+				839A9F7222A545860058D012 /* ErrorTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		839A9F7022A5454E0058D012 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		839A9F7122A545520058D012 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8355B8AB22A1606800910B53 /* NewtTests.swift in Sources */,
+				839A9F6C22A545370058D012 /* TokenStorageTests.swift in Sources */,
+				839A9F7322A545860058D012 /* ErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
