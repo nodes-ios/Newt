@@ -27,6 +27,6 @@ class ErrorTests: XCTestCase {
 
 extension NewtError {
     fileprivate static var allValues: [NewtError] = [
-        .unknown, .nonTokenStored, .emptyToken
+        .unknown, .nonTokenStored, .emptyToken, .storageDecodingError
     ]
 }

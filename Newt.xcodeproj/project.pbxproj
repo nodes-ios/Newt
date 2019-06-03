@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831B526A22A564FD00E9D3EB /* NewtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B526922A564FD00E9D3EB /* NewtTests.swift */; };
 		8355B8A622A1606800910B53 /* Newt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355B89C22A1606800910B53 /* Newt.framework */; };
 		8355B8AD22A1606800910B53 /* Newt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8355B89F22A1606800910B53 /* Newt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8355B8BA22A1609A00910B53 /* Newt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8B922A1609A00910B53 /* Newt.swift */; };
@@ -18,7 +19,6 @@
 		8355B8C622A1648E00910B53 /* NewtError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C522A1648E00910B53 /* NewtError.swift */; };
 		839A9F7322A545860058D012 /* ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7222A545860058D012 /* ErrorTests.swift */; };
 		839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */; };
-		839A9F7722A54F960058D012 /* MockToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7622A54F960058D012 /* MockToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		831B526922A564FD00E9D3EB /* NewtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtTests.swift; sourceTree = "<group>"; };
 		8355B89C22A1606800910B53 /* Newt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Newt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8355B89F22A1606800910B53 /* Newt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Newt.h; sourceTree = "<group>"; };
 		8355B8A022A1606800910B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		8355B8C522A1648E00910B53 /* NewtError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtError.swift; sourceTree = "<group>"; };
 		839A9F7222A545860058D012 /* ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTests.swift; sourceTree = "<group>"; };
 		839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageTests.swift; sourceTree = "<group>"; };
-		839A9F7622A54F960058D012 /* MockToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +156,7 @@
 		839A9F6E22A545420058D012 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				831B526922A564FD00E9D3EB /* NewtTests.swift */,
 				839A9F7222A545860058D012 /* ErrorTests.swift */,
 				839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */,
 			);
@@ -165,7 +166,6 @@
 		839A9F7022A5454E0058D012 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				839A9F7622A54F960058D012 /* MockToken.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839A9F7722A54F960058D012 /* MockToken.swift in Sources */,
 				839A9F7322A545860058D012 /* ErrorTests.swift in Sources */,
 				839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */,
+				831B526A22A564FD00E9D3EB /* NewtTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

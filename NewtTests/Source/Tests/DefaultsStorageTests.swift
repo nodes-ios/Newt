@@ -10,7 +10,7 @@ import XCTest
 @testable import Newt
 
 class DefaultsStorageTests: XCTestCase {
-    var defaultsStorage: DefaultsStorage?
+    var defaultsStorage: DefaultsStorage!
     private let cacheKey = "testCacheKey"
     
     override func setUp() {
@@ -23,11 +23,8 @@ class DefaultsStorageTests: XCTestCase {
 
     func test_defaultsStorage_loadsAndSetsToken() {
         do {
-            try defaultsStorage?.set(value: MockToken(value: "testSettingValue"), forKey: cacheKey)
-            guard let token = try defaultsStorage?.value(forKey: cacheKey) as? MockToken else {
-                XCTFail("Failed to load token from defaults as MockToken")
-                return
-            }
+            try defaultsStorage.set(value: Token(value: "testSettingValue"), forKey: cacheKey)
+            let token = try defaultsStorage.value(forKey: cacheKey)
             XCTAssertEqual(token.value, "testSettingValue", "Incorrect value when loading token from defaults storage")
         } catch {
             XCTFail("Failed setting token from defaults storage")
