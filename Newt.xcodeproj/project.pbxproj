@@ -16,8 +16,9 @@
 		8355B8C222A161C300910B53 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C122A161C300910B53 /* Storage.swift */; };
 		8355B8C422A1624500910B53 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C322A1624500910B53 /* DefaultsStorage.swift */; };
 		8355B8C622A1648E00910B53 /* NewtError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C522A1648E00910B53 /* NewtError.swift */; };
-		839A9F6C22A545370058D012 /* TokenStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F6B22A545370058D012 /* TokenStorageTests.swift */; };
 		839A9F7322A545860058D012 /* ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7222A545860058D012 /* ErrorTests.swift */; };
+		839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */; };
+		839A9F7722A54F960058D012 /* MockToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7622A54F960058D012 /* MockToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,9 @@
 		8355B8C122A161C300910B53 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		8355B8C322A1624500910B53 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		8355B8C522A1648E00910B53 /* NewtError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtError.swift; sourceTree = "<group>"; };
-		839A9F6B22A545370058D012 /* TokenStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorageTests.swift; sourceTree = "<group>"; };
 		839A9F7222A545860058D012 /* ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTests.swift; sourceTree = "<group>"; };
+		839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageTests.swift; sourceTree = "<group>"; };
+		839A9F7622A54F960058D012 /* MockToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +156,8 @@
 		839A9F6E22A545420058D012 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				839A9F6B22A545370058D012 /* TokenStorageTests.swift */,
 				839A9F7222A545860058D012 /* ErrorTests.swift */,
+				839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 		839A9F7022A5454E0058D012 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				839A9F7622A54F960058D012 /* MockToken.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -297,8 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839A9F6C22A545370058D012 /* TokenStorageTests.swift in Sources */,
+				839A9F7722A54F960058D012 /* MockToken.swift in Sources */,
 				839A9F7322A545860058D012 /* ErrorTests.swift in Sources */,
+				839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
