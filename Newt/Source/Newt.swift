@@ -17,6 +17,8 @@ public class Newt {
         switch storageType {
         case .userDefaults:
             self.storage = DefaultsStorage()
+        case .keychain:
+            self.storage = KeychainStorage()
         }
     }
 }
