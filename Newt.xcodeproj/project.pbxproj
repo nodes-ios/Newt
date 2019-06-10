@@ -19,6 +19,9 @@
 		8355B8C622A1648E00910B53 /* NewtError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C522A1648E00910B53 /* NewtError.swift */; };
 		839A9F7322A545860058D012 /* ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7222A545860058D012 /* ErrorTests.swift */; };
 		839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */; };
+		A533033222AE9D2700D9202E /* ExpirationTimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533033122AE9D2700D9202E /* ExpirationTimeUnit.swift */; };
+		A533033422AEA04400D9202E /* ExpirationTimeUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533033322AEA04400D9202E /* ExpirationTimeUnitTests.swift */; };
+		A533033622AEA3E500D9202E /* ExpirableTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533033522AEA3E500D9202E /* ExpirableTokenTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		8355B8C522A1648E00910B53 /* NewtError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtError.swift; sourceTree = "<group>"; };
 		839A9F7222A545860058D012 /* ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTests.swift; sourceTree = "<group>"; };
 		839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageTests.swift; sourceTree = "<group>"; };
+		A533033122AE9D2700D9202E /* ExpirationTimeUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationTimeUnit.swift; sourceTree = "<group>"; };
+		A533033322AEA04400D9202E /* ExpirationTimeUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationTimeUnitTests.swift; sourceTree = "<group>"; };
+		A533033522AEA3E500D9202E /* ExpirableTokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirableTokenTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				8355B8BB22A160CF00910B53 /* TokenStorable.swift */,
 				8355B8BD22A1613500910B53 /* TokenReadable.swift */,
 				8355B8BF22A1615000910B53 /* Token.swift */,
+				A533033122AE9D2700D9202E /* ExpirationTimeUnit.swift */,
 			);
 			path = Token;
 			sourceTree = "<group>";
@@ -159,6 +166,8 @@
 				831B526922A564FD00E9D3EB /* NewtTests.swift */,
 				839A9F7222A545860058D012 /* ErrorTests.swift */,
 				839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */,
+				A533033322AEA04400D9202E /* ExpirationTimeUnitTests.swift */,
+				A533033522AEA3E500D9202E /* ExpirableTokenTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 				8355B8BC22A160CF00910B53 /* TokenStorable.swift in Sources */,
 				8355B8C022A1615000910B53 /* Token.swift in Sources */,
 				8355B8C222A161C300910B53 /* Storage.swift in Sources */,
+				A533033222AE9D2700D9202E /* ExpirationTimeUnit.swift in Sources */,
 				8355B8C422A1624500910B53 /* DefaultsStorage.swift in Sources */,
 				8355B8C622A1648E00910B53 /* NewtError.swift in Sources */,
 			);
@@ -301,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				839A9F7322A545860058D012 /* ErrorTests.swift in Sources */,
+				A533033622AEA3E500D9202E /* ExpirableTokenTests.swift in Sources */,
+				A533033422AEA04400D9202E /* ExpirationTimeUnitTests.swift in Sources */,
 				839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */,
 				831B526A22A564FD00E9D3EB /* NewtTests.swift in Sources */,
 			);
