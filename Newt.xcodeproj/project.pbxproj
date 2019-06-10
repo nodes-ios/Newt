@@ -19,6 +19,15 @@
 		8355B8C622A1648E00910B53 /* NewtError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355B8C522A1648E00910B53 /* NewtError.swift */; };
 		839A9F7322A545860058D012 /* ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7222A545860058D012 /* ErrorTests.swift */; };
 		839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */; };
+		A53302FA22AE55FE00D9202E /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53302F822AE55FE00D9202E /* KeychainWrapper.swift */; };
+		A53302FB22AE55FE00D9202E /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53302F922AE55FE00D9202E /* KeychainItemAccessibility.swift */; };
+		A53302FD22AE561E00D9202E /* KeychainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53302FC22AE561E00D9202E /* KeychainStorageTests.swift */; };
+		A53302FF22AE563C00D9202E /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53302FE22AE563C00D9202E /* KeychainStorage.swift */; };
+		A533032022AE67B100D9202E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533031F22AE67B100D9202E /* AppDelegate.swift */; };
+		A533032222AE67B100D9202E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533032122AE67B100D9202E /* ViewController.swift */; };
+		A533032522AE67B100D9202E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A533032322AE67B100D9202E /* Main.storyboard */; };
+		A533032722AE67B200D9202E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A533032622AE67B200D9202E /* Assets.xcassets */; };
+		A533032A22AE67B200D9202E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A533032822AE67B200D9202E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8355B89B22A1606800910B53;
 			remoteInfo = Newt;
+		};
+		A533032F22AE67B900D9202E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8355B89322A1606800910B53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A533031C22AE67B100D9202E;
+			remoteInfo = KeychainDummyHostApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,6 +63,17 @@
 		8355B8C522A1648E00910B53 /* NewtError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtError.swift; sourceTree = "<group>"; };
 		839A9F7222A545860058D012 /* ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTests.swift; sourceTree = "<group>"; };
 		839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageTests.swift; sourceTree = "<group>"; };
+		A53302F822AE55FE00D9202E /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		A53302F922AE55FE00D9202E /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		A53302FC22AE561E00D9202E /* KeychainStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageTests.swift; sourceTree = "<group>"; };
+		A53302FE22AE563C00D9202E /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		A533031D22AE67B100D9202E /* KeychainDummyHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainDummyHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A533031F22AE67B100D9202E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A533032122AE67B100D9202E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A533032422AE67B100D9202E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A533032622AE67B200D9202E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A533032922AE67B200D9202E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A533032B22AE67B200D9202E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A533031A22AE67B100D9202E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +107,7 @@
 			children = (
 				8355B89E22A1606800910B53 /* Newt */,
 				8355B8A922A1606800910B53 /* NewtTests */,
+				A533031E22AE67B100D9202E /* KeychainDummyHostApp */,
 				8355B89D22A1606800910B53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +117,7 @@
 			children = (
 				8355B89C22A1606800910B53 /* Newt.framework */,
 				8355B8A522A1606800910B53 /* NewtTests.xctest */,
+				A533031D22AE67B100D9202E /* KeychainDummyHostApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +144,7 @@
 		8355B8B622A1608200910B53 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A53302F622AE55C100D9202E /* Third Party */,
 				8355B8C722A1660B00910B53 /* Error */,
 				8355B8C822A1661400910B53 /* Token */,
 				8355B8C922A168BB00910B53 /* Storage */,
@@ -139,6 +176,7 @@
 			children = (
 				8355B8C122A161C300910B53 /* Storage.swift */,
 				8355B8C322A1624500910B53 /* DefaultsStorage.swift */,
+				A53302FE22AE563C00D9202E /* KeychainStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -159,6 +197,7 @@
 				831B526922A564FD00E9D3EB /* NewtTests.swift */,
 				839A9F7222A545860058D012 /* ErrorTests.swift */,
 				839A9F7422A548FE0058D012 /* DefaultsStorageTests.swift */,
+				A53302FC22AE561E00D9202E /* KeychainStorageTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -175,6 +214,36 @@
 			children = (
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A53302F622AE55C100D9202E /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				A53302F722AE55E000D9202E /* SwiftKeychainWrapper */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		A53302F722AE55E000D9202E /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				A53302F922AE55FE00D9202E /* KeychainItemAccessibility.swift */,
+				A53302F822AE55FE00D9202E /* KeychainWrapper.swift */,
+			);
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		A533031E22AE67B100D9202E /* KeychainDummyHostApp */ = {
+			isa = PBXGroup;
+			children = (
+				A533031F22AE67B100D9202E /* AppDelegate.swift */,
+				A533032122AE67B100D9202E /* ViewController.swift */,
+				A533032322AE67B100D9202E /* Main.storyboard */,
+				A533032622AE67B200D9202E /* Assets.xcassets */,
+				A533032822AE67B200D9202E /* LaunchScreen.storyboard */,
+				A533032B22AE67B200D9202E /* Info.plist */,
+			);
+			path = KeychainDummyHostApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,11 +290,29 @@
 			);
 			dependencies = (
 				8355B8A822A1606800910B53 /* PBXTargetDependency */,
+				A533033022AE67B900D9202E /* PBXTargetDependency */,
 			);
 			name = NewtTests;
 			productName = NewtTests;
 			productReference = 8355B8A522A1606800910B53 /* NewtTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A533031C22AE67B100D9202E /* KeychainDummyHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A533032C22AE67B200D9202E /* Build configuration list for PBXNativeTarget "KeychainDummyHostApp" */;
+			buildPhases = (
+				A533031922AE67B100D9202E /* Sources */,
+				A533031A22AE67B100D9202E /* Frameworks */,
+				A533031B22AE67B100D9202E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainDummyHostApp;
+			productName = KeychainDummyHostApp;
+			productReference = A533031D22AE67B100D9202E /* KeychainDummyHostApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -243,6 +330,10 @@
 					};
 					8355B8A422A1606800910B53 = {
 						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A533031C22AE67B100D9202E;
+					};
+					A533031C22AE67B100D9202E = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -252,6 +343,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8355B89222A1606800910B53;
 			productRefGroup = 8355B89D22A1606800910B53 /* Products */;
@@ -260,6 +352,7 @@
 			targets = (
 				8355B89B22A1606800910B53 /* Newt */,
 				8355B8A422A1606800910B53 /* NewtTests */,
+				A533031C22AE67B100D9202E /* KeychainDummyHostApp */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +372,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A533031B22AE67B100D9202E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A533032A22AE67B200D9202E /* LaunchScreen.storyboard in Resources */,
+				A533032722AE67B200D9202E /* Assets.xcassets in Resources */,
+				A533032522AE67B100D9202E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -291,6 +394,9 @@
 				8355B8BC22A160CF00910B53 /* TokenStorable.swift in Sources */,
 				8355B8C022A1615000910B53 /* Token.swift in Sources */,
 				8355B8C222A161C300910B53 /* Storage.swift in Sources */,
+				A53302FB22AE55FE00D9202E /* KeychainItemAccessibility.swift in Sources */,
+				A53302FA22AE55FE00D9202E /* KeychainWrapper.swift in Sources */,
+				A53302FF22AE563C00D9202E /* KeychainStorage.swift in Sources */,
 				8355B8C422A1624500910B53 /* DefaultsStorage.swift in Sources */,
 				8355B8C622A1648E00910B53 /* NewtError.swift in Sources */,
 			);
@@ -301,8 +407,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				839A9F7322A545860058D012 /* ErrorTests.swift in Sources */,
+				A53302FD22AE561E00D9202E /* KeychainStorageTests.swift in Sources */,
 				839A9F7522A548FE0058D012 /* DefaultsStorageTests.swift in Sources */,
 				831B526A22A564FD00E9D3EB /* NewtTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A533031922AE67B100D9202E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A533032222AE67B100D9202E /* ViewController.swift in Sources */,
+				A533032022AE67B100D9202E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +430,31 @@
 			target = 8355B89B22A1606800910B53 /* Newt */;
 			targetProxy = 8355B8A722A1606800910B53 /* PBXContainerItemProxy */;
 		};
+		A533033022AE67B900D9202E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A533031C22AE67B100D9202E /* KeychainDummyHostApp */;
+			targetProxy = A533032F22AE67B900D9202E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A533032322AE67B100D9202E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A533032422AE67B100D9202E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A533032822AE67B200D9202E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A533032922AE67B200D9202E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8355B8AE22A1606800910B53 /* Debug */ = {
@@ -496,7 +636,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NewtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,8 +647,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.NewtTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainDummyHostApp.app/KeychainDummyHostApp";
 			};
 			name = Debug;
 		};
@@ -514,7 +658,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NewtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +668,44 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.NewtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainDummyHostApp.app/KeychainDummyHostApp";
+			};
+			name = Release;
+		};
+		A533032D22AE67B200D9202E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TLQ39969G3;
+				INFOPLIST_FILE = KeychainDummyHostApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodesagency.KeychainDummyHostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A533032E22AE67B200D9202E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TLQ39969G3;
+				INFOPLIST_FILE = KeychainDummyHostApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodesagency.KeychainDummyHostApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,6 +738,15 @@
 			buildConfigurations = (
 				8355B8B422A1606800910B53 /* Debug */,
 				8355B8B522A1606800910B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A533032C22AE67B200D9202E /* Build configuration list for PBXNativeTarget "KeychainDummyHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A533032D22AE67B200D9202E /* Debug */,
+				A533032E22AE67B200D9202E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
