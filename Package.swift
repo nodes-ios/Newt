@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Newt",
+    platforms: [
+        .iOS(.v10),
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -23,9 +26,7 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "NewtTests",
-            dependencies: ["Newt"]),
-    ],
-    platforms: [
-        .iOS(.v10),
+            dependencies: ["Newt"],
+            path: "NewtTests/Source/Tests"),
     ]
 )
