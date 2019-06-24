@@ -24,5 +24,8 @@ let package = Package(
         .testTarget(
             name: "NewtTests",
             dependencies: ["Newt"]),
+    ],
+    platforms: [
+        .iOS(.v10),
     ]
 )
