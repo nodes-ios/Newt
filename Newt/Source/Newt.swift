@@ -12,7 +12,7 @@ public class Newt {
     private let storage: Storage
     public private(set) var storageType: StorageType
     
-    init(storageType: StorageType = .userDefaults) throws {
+    public init(storageType: StorageType = .userDefaults) throws {
         self.storageType = storageType
         switch storageType {
         case .userDefaults:
