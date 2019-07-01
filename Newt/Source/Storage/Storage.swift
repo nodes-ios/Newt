@@ -17,6 +17,7 @@ public protocol Storage {
 
 public enum StorageType {
     case userDefaults
+    case keychain
 }
 
 enum Keys {

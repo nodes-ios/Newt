@@ -22,10 +22,19 @@ class NewtTests: XCTestCase {
         newt = nil
     }
     
-    func test_newt_canInit() {
+    func test_newt_canInitWithUserDefaultsStorageType() {
         do {
             let newt = try Newt(storageType: .userDefaults)
             XCTAssertEqual(newt.storageType, .userDefaults, "Storage type not set correctly")
+        } catch {
+            XCTFail("Could not initialize Newt: \(error)")
+        }
+    }
+    
+    func test_newt_canInitWithKeychainStorageType() {
+        do {
+            let newt = try Newt(storageType: .keychain)
+            XCTAssertEqual(newt.storageType, .keychain, "Storage type not set correctly")
         } catch {
             XCTFail("Could not initialize Newt: \(error)")
         }
